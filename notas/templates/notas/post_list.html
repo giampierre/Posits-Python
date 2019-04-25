@@ -2,7 +2,7 @@
 
 {% block content %}
     {% for post in posts %}
-        <div class="my-4 faqs-box">
+        <div class="my-3 faqs-box">
         <div class="header">
            <h3>
                <a title="ver detalle del post" class="none" href="{% url 'post_detail' pk=post.pk %}"><i>{{ post.title }}</i></a> 
