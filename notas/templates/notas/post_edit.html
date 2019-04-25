@@ -1,0 +1,21 @@
+{% extends 'notas/base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+            <div class="faqs-box mb-3">
+                <div class="text-muted">
+                    <h3>
+                        <i>Posit</i> 
+                        <button class="btn btn-light float-right"><a href="/" class="none text-primary">volver al listado de posits</a></button>
+                    </h3>
+                </div>
+                <div class="card-body text-info">
+                    <form method="POST" class="post-form">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-info btn-block">Publicar posit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+{% endblock %}
