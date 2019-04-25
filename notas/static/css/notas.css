@@ -59,10 +59,21 @@ h1, h2, h3, h4 {
 }
 
 .p-nuevo{
-    background: none;
+    background: #800080;
     text-transform: uppercase;
     font-weight: 200!important;
     border-radius: 5px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .p-small{  

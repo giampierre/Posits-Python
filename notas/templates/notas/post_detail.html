@@ -7,10 +7,11 @@
             <div class="text-muted">
                 <h3>
                     <i>Detalle del posit</i> 
-                    {% if user.is_authenticated %}
-                    <button class="btn btn-light btn-xs float-right"><a class="none text-primary" href="{% url 'post_edit' pk=post.pk %}">editar posit</a></button>
-                    {% endif %}
+                   
                 </h3>
+                {% if user.is_authenticated %}
+                <button class="btn btn-light btn-xs"><a class="none text-primary" href="{% url 'post_edit' pk=post.pk %}">editar posit</a></button>
+                {% endif %}
             </div>
             <div class="card-body text-info">
                 <small class="text-muted">Título:</small>
@@ -25,9 +26,7 @@
                 {% if post.published_date %}
                 <p class="card-text">{{ post.published_date }}</p>
                 {% endif %}
-                <div class="card-link mb-4">
-                   <button class="btn btn-light float-right"><a href="/" class="none text-primary">volver al listado de posits</a></button> 
-                </div>
+                <a href="/" class="none text-primary float-right">volver al listado de posits</a>
             </div>
             
         </div>
